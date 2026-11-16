@@ -1,0 +1,10 @@
+{
+  "standert-hero": {
+    "source": "photos/standert/standert.jpg",
+    "output": "assets/bikes/standert/hero.webp",
+    "type": "image/jpeg",
+    "use": "standert-hero",
+    "alt": "Silver Standert Kreissäge RS road bike beside a railing overlooking a winding mountain road",
+    "caption": "Standert Kreissäge RS"
+  }
+}
