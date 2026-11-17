@@ -92,4 +92,32 @@ acceptance. No precise viewport-width or browser-console pass is claimed.
 `docs/multi-bike-audit.md` records sources, routes, maintenance mappings, structural
 differences and content checks. `docs/validation.md` records automated results,
 browser limitations and owner acceptance. Acceptance does not authorise publication
-or deployment, and no subsequent development slice has begun.
+or deployment. Subsequent proposed architecture work is described below.
+
+## Accepted private hosting architecture — Slice 4
+
+The owner accepted Slice 4 on **17 November 2026**. The
+[architecture](docs/private-hosting-architecture.md) selects Cloudflare Pages Direct
+Upload in the existing account, owner-triggered local Mac builds, and exact-owner-email
+one-time PIN across every serving hostname/path/asset. Adoption remains conditional on
+successful synthetic security acceptance; nothing is configured or published.
+
+The intended browser experience is approximately 30 days, using supported one-month
+application/global sessions and policy Same as application, with actual precedence,
+renewal and Safari behavior still to verify. The owner accepts mailbox-possession
+assurance and the uploader token's account-level residual risk, including potential
+impact on the public site. A dedicated time-limited minimum-permission token must be
+stored in macOS Keychain and retrieved only for explicitly authorised publication;
+administrator credentials remain separate. No credential values enter logs or artefacts.
+
+Every private release must use selected committed Home and Bike Library revisions in
+isolated clean inputs, with both full Git IDs in its manifest. Everyday worktree edits
+neither enter nor block that release and must not be modified, stashed or cleaned.
+The first production revisions are deferred until first private publication.
+Retain current/previous known-good production deployments and their encrypted local
+artefacts until superseded, plus lightweight release history; no arbitrary archive expiry.
+
+All twenty [deployment acceptance tests](docs/deployment-acceptance.md) remain **Not run**.
+The [roadmap](docs/roadmap.md) separates Slice 5A local safeguards, Slice 5B live
+synthetic proof and Slice 6 first private publication. Each needs its own authorisation;
+this acceptance/Git closure does not begin Slice 5A or permit publication.
