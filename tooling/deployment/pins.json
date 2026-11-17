@@ -1,0 +1,7 @@
+{
+  "node": "24.22.3",
+  "wrangler": "4.164.0",
+  "installation_verified": false,
+  "dependency_lock_verified": false,
+  "live_upload_enabled": false
+}

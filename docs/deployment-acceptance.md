@@ -3,7 +3,9 @@
 Date: **17 November 2026**. Companion to the [Slice 4 architecture](private-hosting-architecture.md).
 Every criterion below is **Not run**. This document neither configures hosting nor
 authorises a deployment. The owner accepted the Slice 4 architecture and this amended
-specification on 17 November 2026; implementation is not undertaken. Slice 5A is local
+specification on 17 November 2026. Slice 5A local safeguards are implemented and
+owner-accepted 17 November 2026 after independent Mac checks; live security
+implementation/execution is not undertaken. Slice 5A is local
 safeguards only. Live Stage S testing requires separate Slice 5B authorisation.
 Stage S uses only synthetic content. Stage P permits
 real private content only in separately authorised Slice 6, after S passes and the
@@ -122,3 +124,19 @@ release/manifest hash, host inventory, browser/client versions, outcome and revi
 No private response bodies, cookies, pairing notes or photograph bytes go into public
 issues, CI logs, repository documentation or shared screenshots. Cloudflare dashboards
 alone are insufficient; independent N/U/R HTTP results are required.
+
+
+## Slice 5A local evidence boundary
+
+The [release runbook](release-runbook.md) maps implemented synthetic local tests to
+portions of A14–A16. This is not formal execution or a pass of any deployment criterion.
+All A01–A20 remain **Not run**. Slice 5A has no live uploader and performed no live
+hosting, identity, credential, DNS or publication action. Effective response controls
+and deployment-tool installation remain unverified.
+
+
+Slice 5A owner acceptance covers local preparation/verification only. Owner-observed
+archive checks and negative responses are recorded in the [report](slice-5a-report.md).
+No live criterion has been executed; **all A01–A20 remain Not run**. URL-path privacy,
+toolchain verification and external manifest checksum retention remain carry-forward
+items, not grounds to weaken live acceptance.

@@ -10,7 +10,7 @@ remote verification, deployment and publication.
 | 2 | Explicitly approved Standert derivative photograph | Accepted |
 | 3 | Eight-bike library index and shared detail pages | Accepted 16 November 2026; committed at `eff24aa`; native mobile Safari deferred |
 | 4 | Private hosting architecture and deployment acceptance specification | **Owner-accepted 17 November 2026** with amended sessions, credentials, retention and source policy; no hosting configured |
-| 5A | Local publication safeguards | Proposed; not authorised or started |
+| 5A | Local publication safeguards | **Owner-accepted 17 November 2026** after independent Mac checks; Git closure tracked separately |
 | 5B | Live synthetic hosting proof | Proposed; requires separate explicit authorisation; no real private content |
 | 6 | First private publication and operational acceptance | Proposed; requires successful synthetic acceptance and separate explicit publication authorisation |
 
@@ -23,7 +23,7 @@ authentication coverage must fail closed and return for an alternative design de
 
 ## Slice 5A — Local publication safeguards
 
-Proposed scope, awaiting its own commission:
+Commissioned scope implemented locally and owner-accepted 17 November 2026:
 
 - Release build tooling and explicitly selected committed Home/Bike Library revisions.
 - Isolated clean checkouts or immutable exports, without interference with everyday
@@ -35,7 +35,10 @@ Proposed scope, awaiting its own commission:
 - Pinned deployment tooling, synthetic fixtures and automated negative tests.
 - Local verification only: no Cloudflare/DNS changes, credentials or live publication.
 
-This Git closure does not authorise beginning Slice 5A or installing tooling.
+The Slice 5A commission authorised local implementation only. See the
+[release runbook](release-runbook.md) for commands, test coverage and limitations.
+Deployment tooling pins are selected but installation/transitive lock verification
+remains blocked by npm DNS; no live upload path is enabled. This does not begin 5B.
 
 ## Slice 5B — Live synthetic hosting proof
 
@@ -63,3 +66,14 @@ Requires successful synthetic acceptance and separate explicit publication autho
 No automatic publication follows architecture acceptance, Git closure or a successful
 build. No galleries, PDFs, editing, search, other repository changes or public-site
 redesign are included. Do not silently add runtime authentication if Pages fails.
+
+
+## Carry-forward from Slice 5A acceptance
+
+Pinned Node/Wrangler installation and dependency locking remain unresolved. Review
+model names embedded in synthetic URL paths before live publication. Retain a trusted
+external manifest checksum. Proposed permanent release storage is
+`~/.local/share/pastthegrid-home/releases/`, conditional on non-synchronised and
+FileVault-protected location confirmation. The owner reported FileVault enabled;
+location-specific confirmation is still required. Simplify the owner-facing publication
+command as a Slice 6 usability objective. None of these items begins Slice 5B.

@@ -106,3 +106,26 @@ and is deferred without blocking acceptance. This supersedes the pending owner
 acceptance status above; the original automated-browser limitations remain valid.
 No exact viewport matrix, console check or native-phone pass is claimed.
 No code changes, commit, push, deployment or new slice form part of this acceptance.
+
+# Slice 5A local validation — 17 November 2026
+
+All 38 tests passed (25 existing + 13 release safeguards tests), documentation links
+resolve, and `git diff --check` passes. Synthetic Git fixture preparation, independent
+17-file validation, source isolation, metadata rejection, byte/hash mutation, corrupt
+archives, exact restore, failed-preflight zero-call checks and non-destructive retention
+planning were exercised. See the [completion report](slice-5a-report.md) and
+[runbook](release-runbook.md). No real private release or live hosting was exercised.
+All A01–A20 deployment acceptance outcomes remain **Not run**. Tooling installation/
+transitive lock verification and effective Cloudflare response behavior remain unverified.
+Slice 5A was owner-accepted on 17 November 2026; Git closure is recorded separately.
+
+
+## Slice 5A owner-observed acceptance — 17 November 2026
+
+Owner reported FileVault enabled, 38 tests passing in 7.295s, synthetic A/B preparation,
+17-file inventory inspection and independent verification, isolated permissions/inventory/
+mutation rejection, exact A restore, intact verified originals and failed-closed preflight.
+The reproduced A/B archive hashes and exact negative messages are in the
+[acceptance report](slice-5a-report.md). Runbook permission restoration is corrected.
+This establishes **local owner acceptance**, not live authentication/security verification.
+All twenty deployment acceptance criteria remain **Not run**.

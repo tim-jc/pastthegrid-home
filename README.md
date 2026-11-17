@@ -121,3 +121,18 @@ All twenty [deployment acceptance tests](docs/deployment-acceptance.md) remain *
 The [roadmap](docs/roadmap.md) separates Slice 5A local safeguards, Slice 5B live
 synthetic proof and Slice 6 first private publication. Each needs its own authorisation;
 this acceptance/Git closure does not begin Slice 5A or permit publication.
+
+
+## Local publication safeguards — Slice 5A
+
+A separate standard-library release workflow is implemented and **owner-accepted
+on 17 November 2026** following independent Mac checks. It does not change ordinary builds or enable live uploading. Follow the
+[release runbook](docs/release-runbook.md) to generate synthetic A/B fixtures, export
+explicit committed inputs, prepare a frozen 17-file stage, independently validate its
+manifest/archive, and demonstrate rejection of extra files and mutated bytes.
+
+Private-mode archives/staging require operator-confirmed encrypted local storage;
+permissions and ignored directories are not encryption. Only generated synthetic
+fixtures were exercised in this slice. Exact Node/Wrangler pins are recorded separately;
+installation/transitive lock verification is blocked by npm DNS and remains unverified.
+All formal deployment tests remain Not run; Slice 5B needs separate authorisation.
